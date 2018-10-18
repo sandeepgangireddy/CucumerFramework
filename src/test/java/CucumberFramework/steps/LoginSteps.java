@@ -26,6 +26,7 @@ public class LoginSteps {
 	    //System.setProperty("webdriver.gecko.driver",System.getProperty("user.dir") +"/src/test/java/CucumberFramework/resources/geckodriver"); //THIS WILL WORK TOO - MAKE SURE YOU PUT YOUR GECKO AND CHROMEDRIVER IN PROJECT PATH
 		 System.setProperty("webdriver.gecko.driver","/Users/sandeepgangireddy/Desktop/CucumberFramework/CucumberFramework/src/test/java/CucumberFramework/resources/geckodriver");
 		//System.setProperty("webdriver.chrome.driver","/Users/sandeepgangireddy/Desktop/CucumberFramework/CucumberFramework/src/test/java/CucumberFramework/resources/chromedriver");
+		//sample commit for GIT  
 		this.driver = new ChromeDriver();
 		this.driver = new FirefoxDriver();
 		this.driver.manage().window().maximize();
@@ -112,6 +113,7 @@ public class LoginSteps {
 	@After()
 	public void tearDown() {
 		driver.quit();
+		
 	}
 
 }
