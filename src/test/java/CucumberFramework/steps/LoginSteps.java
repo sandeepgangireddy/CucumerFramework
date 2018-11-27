@@ -95,8 +95,8 @@ public class LoginSteps {
 	
 	}
 	
-	@Then("^User should not be taken to the successful login page$")
-	public void user_should_not_be_taken_to_the_successful_login_page() throws Throwable {
+	@Then("^User is shown the error message for Incorrect Login$")
+	public void user_is_shown_the_error_message_for_Incorrect_Login() throws Throwable {
 		Thread.sleep(6000);
 		WebElement message_Text = driver.findElement(By.xpath("//div[@class='message-text'][contains(.,'The email or password is incorrect.')]"));
 		Assert.assertEquals(true,  message_Text.isDisplayed());
