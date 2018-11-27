@@ -11,7 +11,7 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 		features = {"src/test/java/CucumberFramework/featureFiles"},
 		glue = {"CucumberFramework.steps"},
 		monochrome = true,
-		tags = {"@important"},
+		tags = {},
 		plugin = {"pretty","html:target/cucumber","json:target/cucumber.json","com.cucumber.listener.ExtentCucumberFormatter: target/report.html"}
 )
 public class MainRunner extends AbstractTestNGCucumberTests{
